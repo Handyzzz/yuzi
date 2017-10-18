@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F45CD93CB46C6676F9E9926DBFF5F8F02FF4EC92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "46865FBD07A9C0787F42904B9FC63832EFE3E197" : 0,
+    "F45CD93CB46C6676F9E9926DBFF5F8F02FF4EC92" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5B0B8885-28D8-45B4-90F9-B7F83E43E519",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "46865FBD07A9C0787F42904B9FC63832EFE3E197" : "Withyou",
+    "F45CD93CB46C6676F9E9926DBFF5F8F02FF4EC92" : "yuzi_ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Withyou",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Withyou.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com\/mobilestack\/linwoios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "46865FBD07A9C0787F42904B9FC63832EFE3E197"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:linwo\/yz_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F45CD93CB46C6676F9E9926DBFF5F8F02FF4EC92"
+    }
+  ]
+}

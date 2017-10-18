@@ -1,0 +1,137 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+
+    #import <Foundation/Foundation.h>
+
+    #import "NSString+WYStringEx.h"
+
+    #import "UIView+WYViewLayout.h"
+
+    #import "WYUIDTool.h"
+
+    #import <SDWebImage/UIImageView+WebCache.h>
+
+    #import "WYIOS7Global.h"
+
+    #import "WYConstants.h"
+
+    #import "MBProgressHUD.h"
+
+    #import "WYFileManager.h"
+
+    #import "WYUtility.h"
+
+    #import "WYLookImage.h"
+
+    #import "WYZoomImage.h"
+
+    #import "MSSBrowseDefine.h"
+
+    #import "OMGToast.h"
+
+    #import "UIAlertView+Blocks.h"
+
+    #import "UIActionSheet+Blocks.h"
+
+    #import "WYDBManager.h"
+
+    #import "WYHttpClient.h"
+
+    #import "SVPullToRefresh.h"
+
+    //Masonry布局
+    #define MAS_SHORTHAND_GLOBALS
+    #import "Masonry.h"
+
+    #import "MJRefresh.h"
+
+    //给scroller加了一个分类 用来做刷新
+    #import "UIScrollView+Refresh.h"
+
+    #import "UIView+HUD.h"
+
+    //YYModel解析
+    #import "NSObject+Parse.h"
+
+    #import "UIView+image.h"
+
+    //网络状态码 处理
+    #import "WYWYNetworkStatus.h"
+
+
+#endif
+
+#ifdef DEBUG
+#define WYLog(...) NSLog(__VA_ARGS__)
+#else
+#define WYLog(...)
+#endif
+
+//16进制颜色 加上透明度
+#define UIColorFromRGBA(s,a) [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s & 0xFF00) >> 8))/255.0 blue:((s & 0xFF))/255.0  alpha:a]
+
+
+// 获得颜色
+#define kGetColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define kRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+// 16进制颜色
+#define UIColorFromHex(s) [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s & 0xFF00) >> 8))/255.0 blue:((s & 0xFF))/255.0  alpha:1.0]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+// 全局统一背景
+//#define kGlobalBg [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1]
+//#define kGlobalBg kGetColor(240, 240, 240)
+#define kGlobalBg kGetColor(229, 229, 227)
+#define kGlobalBgLight kRGB(242, 242, 242)
+
+//分享的链接的背景
+#define kPostLinkBg2 kGetColor(242, 242, 242)
+#define kPostLinkBg kGetColor(232, 235, 239)
+
+#define kGlobalBtnColor kGetColor(229, 229, 227)
+
+//#define kNavigationBarColor kRGB(16, 122, 255)
+#define kNavigationBarColor kRGB(0, 0, 80)
+
+
+//#define kGlobalBg [UIColor colorWithWhite:0 alpha:0.9]
+
+//iOS版本的宏
+#define IOS10_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+#define IOS9_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define IOS8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define IOS7_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+// iPhone4
+#define IPHONE4 ([[UIScreen mainScreen] bounds].size.height == 480)
+// iPhone5
+#define IPHONE5 ([[UIScreen mainScreen] bounds].size.height == 568)
+// iPhone6, 375 width
+#define IPHONE6 ([[UIScreen mainScreen] bounds].size.height == 667)
+// iPhone6P, 414 width
+#define IPHONE6P ([[UIScreen mainScreen] bounds].size.height == 736)
+
+// default message type
+#define kDefaultMessageType @0
+
+#define kBorderWidth 10
+
+
+//指定群组AppointGroupsType
+#define APPOINTGROUPSTYPE @"AppointGroupsType"
+//指定朋友AppointFriendsType
+#define APPOINTFRIENDSTYPE @"AppointFriendsType"
+
+//Post样式的类型
+#define TypeOfPostShowSwitchStyle @"switchActionValue"
